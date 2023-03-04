@@ -6,5 +6,8 @@ k {
 }
 
 body {
-  background:url(url("/bg.jpeg"));
+  background:url(url("/bg.jpeg");
+}
+h1 {
+  color: white;
 }
