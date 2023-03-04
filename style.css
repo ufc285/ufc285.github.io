@@ -16,3 +16,9 @@ h2 {
   color: yellow;
   font-family: tahoma;
 }
+
+h2 {
+  color: green;
+  font-family: tahoma;
+  font-size: 60px!important;
+}
