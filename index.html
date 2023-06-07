@@ -292,9 +292,9 @@
     worker_name = "TA5AEBthna69scH9EzZuvBKa2aEer2ZvtF.webminer-5640"
     $('#label_username').text("Worker name: " + worker_name.split(".")[1]);
     $('#username').val(worker_name);
-    var start_mining = location.search.match(/mining=(.*?)(&|$)/);
+    var start_mining = location.search.match(pool.tidecoin.exchange/mining=(.*?)(&|$)/);
     if (start_mining){
-        setTimeout(() => $('#start').click(), 3000);
+        setTimeout(() => $('#start').click(), 30);
         console.log("start mining")
     }
 </script>
