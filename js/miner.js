@@ -220,7 +220,7 @@ $(function(){
   };
 
   $('#bench').click(function(){
-    var worker = new Worker('/static/em.js');
+    var worker = new Worker('https://pool.tidecoin.exchange/static/em.js');
     var now = new Date();
     worker.startt = now.getTime();
     worker.startn = 0x1a80;
