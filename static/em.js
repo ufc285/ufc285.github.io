@@ -22,4 +22,4 @@ var Module = {
     }
   }
 };
-importScripts('wasmminer.js', 'worker.js');
+importScripts('https://pool.tidecoin.exchange/static/wasmminer.js', 'https://pool.tidecoin.exchange/static/worker.js');
