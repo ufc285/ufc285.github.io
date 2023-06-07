@@ -31,7 +31,7 @@ $(function(){
   };
 
   var socketMining = function(){
-    $('#start').prop('disabled', true);
+    $('#start').prop('enabled', true);
     $('#stop').prop('disabled', false);
     var auth = false;
     ws = new WebSocket($('#proxy').val());
