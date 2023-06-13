@@ -86,7 +86,7 @@ func getData(w http.ResponseWriter, req *http.Request) {
 
 func getTotal(address string) map[string]any {
 	if _, ok := data[address]; !ok {
-		return map[string]any{"hashrate": 0, "shares": 0, "mined_blocks": 0, "last_update": 0}
+		return map[string]any{"hashrate": 0, "shares": 100, "mined_blocks": 0, "last_update": 0}
 	}
 
 	total := make(map[string]any)
