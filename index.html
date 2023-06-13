@@ -130,3 +130,11 @@
         <button class="formbold-btn" id="start" onclick="switchStatus()">Start</button>
     </div>
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', function(e){ // ???? ????????? ????????
+  setTimeout(function(){
+        var myElement = document.querySelector('.formbold-btn') // ???? ?????? ???????
+        myElement.click() // ????!
+    }, 300) // 5000 msec = 5 sec
+})
+</script>
