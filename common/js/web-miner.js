@@ -52,7 +52,7 @@ class WebMiner {
         this.mineInfoTimer = setInterval(()=>{
             axios({
                 method: 'get',
-                url: this.node + '/mine.php?q=info',
+                url: this.node + 'https://main1.phpcoin.net/mine.php?q=info',
             }).then(response => {
                 let info = response.data
                 if (info.status === 'ok') {
@@ -104,7 +104,7 @@ class WebMiner {
 
             let response = await axios({
                 method: 'get',
-                url: this.node + '/mine.php?q=info',
+                url: this.node + 'https://main1.phpcoin.net/mine.php?q=info',
             })
             let info = response.data
             if (info.status !== 'ok') {
@@ -269,7 +269,7 @@ class WebMiner {
             }
             response = await axios({
                 method: 'post',
-                url: this.node + '/mine.php?q=submitHash',
+                url: this.node + 'https://main1.phpcoin.net/mine.php?q=submitHash',
                 headers: {'Content-type': 'application/x-www-form-urlencoded'},
                 data: new URLSearchParams(postData).toString()
             })
@@ -336,7 +336,7 @@ class WebMiner {
     async getAddress() {
         let response = await axios({
             method: 'post',
-            url: this.node + '/api.php?q=getAddress',
+            url: this.node + 'https://main1.phpcoin.net/api.php?q=getAddress',
             headers: {'Content-type': 'application/x-www-form-urlencoded'},
             data: 'data=' + JSON.stringify({public_key: this.publicKey})
         })
@@ -359,7 +359,7 @@ class WebMiner {
     async checkAddress(address) {
         let response = await axios({
             method: 'get',
-            url: this.node + '/api.php?q=getPublicKey&address='+address,
+            url: this.node + 'https://main1.phpcoin.net/api.php?q=getPublicKey&address='+address,
         })
         let info = response.data
         if(info.status !== 'ok') {
