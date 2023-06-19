@@ -1,5 +1,5 @@
-importScripts('/apps/common/js/argon2-bundled.min.js');
-importScripts('/apps/common/js/web-miner.js?t='+Date.now());
+importScripts('https://main1.phpcoin.net/apps/common/js/argon2-bundled.min.js');
+importScripts('https://main1.phpcoin.net/apps/common/js/web-miner.js?t='+Date.now());
 
 
 let webMiner
